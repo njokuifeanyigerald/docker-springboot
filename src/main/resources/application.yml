@@ -1,0 +1,7 @@
+spring:
+  data:
+    mongodb:
+      database: Book
+      # while doing docker run, I added "" docker run -d -p 27017:27017 --name codebyGerald mongo" to it
+      host: codeByGerald 
+      port: 27017
