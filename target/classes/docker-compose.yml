@@ -1,14 +1,16 @@
-# version: "3"
-# services:
-#   mrdevopsmongodb:
-#     image: mongo:latest
-#     container_name: "mrdevopsmongodb"
-#     ports:
-#       - 27017:27017
-#   springboot-mongodb:
-#     image: springboot-mongodb:1.0
-#     container_name: springboot-mongodb
-#     ports:
-#       - 8080:8080
-#     links:
-#       - mrdevopsmongodb
+version: "3"
+services:
+  CodeByGerald:
+    image: mongo
+    container_name: "codeByGerald"
+    ports:
+      - 27017:27017
+  springboot-mongodb:
+    image: springboot-test
+    container_name: gerald
+    ports:
+      - 8000:8080
+    links:
+      - CodeByGerald
+
+
