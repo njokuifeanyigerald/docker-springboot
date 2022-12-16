@@ -5,7 +5,7 @@ services:
     container_name: "codeByGerald"
     ports:
       - 27017:27017
-  springboot-mongodb:
+  springboot-test:
     image: springboot-test
     container_name: gerald
     ports:
